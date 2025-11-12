@@ -3,11 +3,14 @@ import React, { useState } from "react";
 function NumberCounter() {
   const [no, setNo] = useState(0);
 
-  const noIsEvenDiv = (
-  <>
-    <hr />
-    <span>짝수입니다.</span>
-  </>
+  const noIsEvenDiv = 
+    no % 2 == 0 ? (
+      <>
+        <hr />
+        <span>짝수입니다.</span>
+      </> 
+    ) : ( 
+      <></>
   );
 
   return (
