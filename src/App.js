@@ -9,6 +9,6 @@ const App = () => {
       {<NumberCounter />}
     </div>
   );
-}
+};
 
 export default App;
