@@ -1,0 +1,23 @@
+import React, { useState } from "react";
+
+function NumberCounter() {
+  const [no, setNo] = useState(0);
+
+  const noIsEvenDiv = (
+  <>
+    <hr />
+    <span>짝수입니다.</span>
+  </>
+  );
+
+  return (
+    <div>
+      숫자 : {no}
+      <hr />
+      <button onClick={() => setNo(no + 1)}>증가</button>
+      {noIsEvenDiv}
+    </div>
+  );
+}
+
+export default NumberCounter;

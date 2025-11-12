@@ -1,10 +1,12 @@
 import React from "react";
 import StopWatch from "./StopWatch";
+import NumberCounter from "./NumberCounter";
 
 const App = () => {
   return (
     <div>
-      {<StopWatch />}
+      {/* {<StopWatch />} */}
+      {<NumberCounter />}
     </div>
   );
 }
