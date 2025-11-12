@@ -6,8 +6,11 @@ function StopWatch() {
   const timeoutId = setTimeout(()=>setNum(num + 1), 1000);
   
   const pause = () => {
-    console.log("실행됨!");
     clearTimeout(timeoutId);
+  }
+
+  const resume = () => {
+    setTimeout(()=>setNum(num + 1), 1000);
   }
   
   return (
@@ -16,6 +19,8 @@ function StopWatch() {
 
       <hr />
       <button onClick={pause}>일시정지</button>
+      <hr />
+      <button onClick={resume}>재개</button>
     </div>
   );
 }
